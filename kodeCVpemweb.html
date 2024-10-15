@@ -5,33 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Saya</title>
     <style>
-     
+        /* Mengatur style dasar untuk body */
         body {
-            font-family: times new roman, sans-serif;
-            background-color: #f8c8dc;
-            color: #000000; 
-            margin: 10;
-            padding: 50;
+            font-family: "Times New Roman", sans-serif;
+            background-color: #f8c8dc; /* Soft pink */
+            color: #000000; /* Hitam pekat */
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 150vh;
+            height: 100vh;
         }
 
-            background-color: soft pink;
+        /* Mengatur container agar konten berada di tengah */
+        .container {
+            background-color: white;
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
             max-width: 600px;
+            text-align: left; /* Teks rata kiri */
         }
 
-        profile-img {
+        /* Mengatur tampilan gambar profil agar di tengah */
+        .profile-img {
+            display: block;
+            margin: 0 auto 20px auto; /* Gambar berada di tengah */
             border-radius: 50%;
             width: 150px;
             height: 150px;
             object-fit: cover;
-            margin-bottom: 20px;
         }
 
         /* Mengatur h1 dan h2 */
@@ -68,10 +72,7 @@
         <div class="profile">
             <img src="https://vclass.unila.ac.id/pluginfile.php/1510716/user/icon/mb2nl/f1?rev=20569373" alt="Foto Profil" class="profile-img">
             <h1>DARA ADELA ZUANTIKA</h1>
-            <p>Saya merupakan mahasiswi Universitas Lampung 
-                program studi Pendidikan Teknologi Informasi angkatan tahun 2023
-                saya anak pertama dari 3 berkeluarga
-                Saya memiliki hobi memasak, make-up, dan bernyanyi.</p>
+            <p>Saya merupakan mahasiswi Universitas Lampung program studi Pendidikan Teknologi Informasi angkatan tahun 2023. Saya memiliki hobi memasak, make-up, dan bernyanyi.</p>
         </div>
 
         <!-- Kontak -->
@@ -136,3 +137,4 @@
     </div>
 </body>
 </html>
+
