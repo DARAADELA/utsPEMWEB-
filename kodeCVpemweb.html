@@ -2,67 +2,85 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Saya</title>
+    <title>CV Dara Adela Zuantika</title>
     <style>
-        /* Mengatur style dasar untuk body */
-        body {
-            font-family: "Times New Roman", sans-serif;
-            color: #000000; /* Hitam pekat */
+        /* CSS Styles */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            flex-direction: column;
         }
 
-        /* Mengatur judul CV di tengah */
-        .title {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        /* Mengatur container agar konten berada di tengah */
         .container {
+            width: 80%;
+            max-width: 800px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            max-width: 600px;
-            text-align: left; /* Teks rata kiri */
+            text-align: center;
         }
 
-        /* Mengatur tampilan gambar profil agar di tengah */
+        .title {
+            margin-bottom: 20px;
+        }
+
+        .title h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .photo {
+            margin-bottom: 20px;
+        }
+
         .profile-img {
-            display: block;
-            margin: 0 auto 20px auto; /* Gambar berada di tengah */
-            border-radius: 50%;
             width: 150px;
             height: 150px;
+            border-radius: 50%;
             object-fit: cover;
+            border: 4px solid #333;
         }
 
-        /* Mengatur h1 dan h2 */
-        h1, h2 {
-            margin: 10px 0;
-            color: #000000; /* Hitam pekat */
+        .info {
+            margin-top: 20px;
         }
 
-        /* Mengatur daftar kontak dan skill */
+        .info h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .description {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
         ul {
-            list-style-type: none;
+            list-style: none;
+            margin: 10px 0;
             padding: 0;
         }
 
-        /* Mengatur setiap item dalam daftar */
-        li {
+        ul li {
             margin-bottom: 10px;
         }
 
-        /* Mengatur style untuk link */
         a {
-            color: #000000; /* Hitam pekat */
+            color: #007bff;
             text-decoration: none;
         }
 
@@ -72,78 +90,81 @@
     </style>
 </head>
 <body>
-    <!-- Judul CV di tengah -->
-    <div class="title">
-        CV Dara Adela Zuantika
-    </div>
-
     <div class="container">
-        <!-- Section Foto dan Nama -->
-        <div class="profile">
-            <img src="https://vclass.unila.ac.id/pluginfile.php/1510716/user/icon/mb2nl/f1?rev=20569373" alt="Foto Profil" class="profile-img">
-            <h1>DARA ADELA ZUANTIKA</h1>
-            <p>Saya merupakan mahasiswi Universitas Lampung program studi Pendidikan Teknologi Informasi angkatan tahun 2023. Saya memiliki hobi memasak, make-up, dan bernyanyi.</p>
+        <!-- Judul CV -->
+        <div class="title">
+            <h1>CV DARA ADELA ZUANTIKA</h1>
         </div>
 
-        <!-- Kontak -->
-        <div class="contact">
+        <!-- Foto -->
+        <div class="photo">
+            <img src="https://vclass.unila.ac.id/user/profile.php?id=53483" alt="Foto Profil" class="profile-img">
+        </div>
+
+        <!-- Deskripsi Singkat -->
+        <div class="info">
+            <p class="description">Saya adalah seorang developer yang antusias, memiliki pengalaman dalam pengembangan aplikasi web menggunakan JavaScript, Python, dan berbagai framework modern.</p>
+
+            <!-- Nama -->
+            <h2>Nama Lengkap</h2>
+            <p>Dara Adela Zuantika</p>
+
+            <!-- Kontak -->
             <h2>Kontak</h2>
-            <ul>
-                <li>Email: <a href="mailto:daraadela@gmail.com">daraadela@gmail.com</a></li>
-                <li>WhatsApp: <a href="https://wa.me/628XXXXXXXXXX">+0823-7253-2324</a></li>
-                <li>Instagram: <a href="https://instagram.com/daraadela" target="_blank">@daraadela</a></li>
+            <ul class="contact">
+                <li>Email: <a href="mailto:dara.adela@example.com">dara.adela@example.com</a></li>
+                <li>WhatsApp: <a href="https://wa.me/6281234567890">+62 812-3456-7890</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/daraadela" target="_blank">linkedin.com/in/daraadela</a></li>
             </ul>
-        </div>
 
-        <!-- Skill IT -->
-        <div class="skills">
-            <h2>Kemampuan IT</h2>
-            <ul>
-                <li>Pengembangan Web (HTML, CSS, JavaScript)</li>
-                <li>Pemrograman (Java, C++)</li>
-                <li>Desain aplikasi (Canva)</li>
+            <!-- Skill IT -->
+            <h2>Skill IT</h2>
+            <ul class="skills">
+                <li>Programming: JavaScript, Python, HTML, CSS, SQL</li>
+                <li>Frameworks: React, Node.js, Django</li>
+                <li>Database: MySQL, PostgreSQL</li>
+                <li>Version Control: Git, GitHub</li>
             </ul>
-        </div>
 
-        <!-- Skill Bahasa -->
-        <div class="language-skills">
-            <h2>Kemampuan Bahasa</h2>
-            <ul>
-                <li>Bahasa Indonesia</li>
-                <li>Bahasa Inggris</li>
+            <!-- Skill Bahasa -->
+            <h2>Skill Bahasa</h2>
+            <ul class="languages">
+                <li>Bahasa Indonesia (Native)</li>
+                <li>English (Fluent)</li>
             </ul>
-        </div>
 
-        <!-- Pengalaman Kerja -->
-        <div class="experience">
+            <!-- Pengalaman Kerja -->
             <h2>Pengalaman Kerja</h2>
-            <ul>
-                <li>Pernah menjalankan bisnis fashion dan makanan online (2019-2023)</li>
+            <ul class="experience">
+                <li><strong>Full-Stack Developer</strong> - PT ABC (2021-2023)</li>
+                <li><strong>Frontend Developer</strong> - PT XYZ (2019-2021)</li>
             </ul>
-        </div>
 
-        <!-- Pengalaman Berorganisasi -->
-        <div class="organization">
+            <!-- Pengalaman Berorganisasi -->
             <h2>Pengalaman Berorganisasi</h2>
-            <ul>
-                <li>Generasi Berencana Tingkat Kabupaten - Duta Genre (2023 - 2024)</li>
-                <li>Pramuka - Bendahara Umum (2020 - 2023)</li>
-                <li>Kelas Studi Seni Unila - Anggota</li>
+            <ul class="organizations">
+                <li>Ketua Tim IT - Komunitas Pemrograman XYZ (2022-sekarang)</li>
+                <li>Anggota - BEM Universitas ABC (2018-2019)</li>
             </ul>
-        </div>
 
-        <!-- Riwayat Pendidikan -->
-        <div class="education">
+            <!-- Riwayat Pendidikan -->
             <h2>Riwayat Pendidikan</h2>
-            <ul>
-                <li>TK ABA 2 Wonosobo, Tanggamus (2009 - 2010)</li>
-                <li>SD N 2 Tanggamus (2010 - 2016)</li>
-                <li>SMP N 2 Tanggamus (2017 - 2019)</li>
-                <li>SMA N 2 Kotaagung, Jurusan IPA (2020 - 2023)</li>
-                <li>Saat ini sedang menempuh pendidikan di Universitas Lampung, Prodi Pendidikan Teknologi Informasi (2023 - sekarang)</li>
+            <ul class="education">
+                <li>Sarjana Teknik Informatika - Universitas ABC (2015-2019)</li>
+            </ul>
+
+            <!-- Sertifikasi -->
+            <h2>Sertifikasi</h2>
+            <ul class="certifications">
+                <li>Certified Professional Scrum Master (PSM I)</li>
+                <li>Google Data Analytics Professional Certificate</li>
             </ul>
         </div>
-
     </div>
+
+    <script>
+        // JavaScript untuk interaksi jika diperlukan di masa mendatang
+        console.log("Website CV Dara Adela Zuantika berhasil dimuat!");
+    </script>
 </body>
 </html>
